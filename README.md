@@ -1,12 +1,16 @@
 # -
 drop-down menu
 创建下拉菜单
-  TopMenuView *toPmenu = [[TopMenuView alloc]initWithFrame:CGRectMake(0, 80, SCREEN_SIZE.width, 50)];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    TopMenuView *toPmenu = [[TopMenuView alloc]initWithFrame:CGRectMake(0, 80, SCREEN_SIZE.width, 50)];
     toPmenu.MenudataSource = self;
     toPmenu.Menudatadelegat = self;
     [toPmenu setTitleArrays:@[@"区域",@"公司",@"职务"]];
     [self.view addSubview:toPmenu];
-    #pragma mark -----menudatasource
+}
+
+#pragma mark -----menudatasource
 -(NSArray *)setDataSourceLetf{
     return @[
              //             第一个
