@@ -96,6 +96,8 @@ drop-down menu
              ];
 }
 #pragma mark-------delegate
+
+
 -(void)selectLeftrow:(NSInteger)leftrow selectcenter:(BOOL)selectcenter selectcenterrow:(NSInteger)centerrow selectright:(BOOL)selectright selectrightrow:(NSInteger)rightrow
 {
     NSLog(@"%@",@"选中");
